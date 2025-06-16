@@ -1,5 +1,5 @@
 # zmk-kin36-sweep36-swoop36-diodless-matrix-firmware
-ZMK Firmware for kin36, sweep36, swoop36 and other 5x3 keyboards with full diodless matrix.
+ZMK Firmware for kin36, sweep36(zmk cradio) and other 3x5 keyboards with full diodless matrix and 34 or 36 keys layout.
 
 
 
@@ -7,25 +7,19 @@ ZMK Firmware for kin36, sweep36, swoop36 and other 5x3 keyboards with full diodl
 
 ** flash new firmware
 
-1. [[https://github.com/sky-bro/zmk-config/fork][fork]] this repo
+1. Fork this repo
 2. (optional) update keymap and config file
 3. wait github action to build the firmware, then you download and decompress the zip file
 4. connect left or right half to your computer with use cable
 5. left or right half enter bootloader, you can enter bootloader by
-   1) pressing the =&bootloader= key (requires that keyboard is connected to a device for typing)
-   2) double-clicking the reset button
-   3) quickly short-circuiting the reset button twice (if the button is not working)
-   4) quickly short-circuiting the gnd & rst pins of the controller twice (top left corner, the second & thrid pins)
+   1) double-clicking the reset button
+   2) quickly short-circuiting the reset button twice (if the button is not working)
+   3) quickly short-circuiting the gnd & rst pins of the controller twice(not the VCC 3.3v or RAW 5v pins!) 
 6. copy firmware to your half of keyboard (updating keymap and changing keyboard name do not have to flash the right half)
    1) filename with 'left' is for the left half of keyboard
    2) filename with 'right' is for the right half of keyboard
    3) filename with 'reset' is for the left/right half to forget its bluetooth connection info (when left & right half is not able to connect, to forget paired devices)
 
-** My Keymap
-
-#+begin_quote
-screenshots taken from [[https://nickcoutsos.github.io/keymap-editor/][keymap editor]]
-#+end_quote
 
 *** Characters
 
