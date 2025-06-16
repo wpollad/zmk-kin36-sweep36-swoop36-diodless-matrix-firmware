@@ -1,0 +1,13 @@
+file_format: "1"
+id: cradio
+name: crazy-keyboards/Sweep_Square
+type: shield
+url: https://github.com/crazy-keyboards/zmk-config-sweep-square-36
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - studio
+siblings:
+  - sweep_square_left
+  - sweep_square_right
