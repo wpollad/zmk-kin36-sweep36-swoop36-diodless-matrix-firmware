@@ -1,486 +1,101 @@
-[
-  {
-    "name": "Keymap",
-    "author": "Max Petretta, maxp.co",
-    "notes": "# Keymap\n\nA combo-infused keymap for various QMK & ZMK boards, including: OLKB Planck v6, Boardsource Equals 48, Corne-ish Zen 3x5, and Ferris Sweep\n\n![A picture of a 3x5 split keymap](./keymap.png)\n\n[Link to keyboard-layout-editor](http://www.keyboard-layout-editor.com/#/gists/39d751b9dc2e97a37b8e29fe4aa87cc5)\n\n## Features\n\nThe keymap has the following benefits:\n\n- 36 key optimized (34 on [Sweep](./sweep/cradio.keymap))\n- Colemak DHm base layer\n- Convenient combos for symbols\n- Home-row modifiers on both hands\n- Macros for quickly taking a screenshot/viewing clipboard history (Alfred)\n- Useful CAPSWORD instead of useless CAPSLOCK\n- Only three total layers!\n\n## Inspiration\n\nIdeas for this keymap were drawn from the below resources:\n\n- [Colemak Mod-DH](https://colemakmods.github.io/mod-dh/)\n- [The Miryoku layout](https://github.com/manna-harbour/qmk_firmware/tree/miryoku/users/manna-harbour_miryoku)\n- [Skychil's Kombol layout](https://github.com/skychil/kombol)\n- [Jonas Hietala's T-34 layout](https://www.jonashietala.se/blog/2021/06/03/the-t-34-keyboard-layout/)\n- [Precondition's home row mods writeup](https://precondition.github.io/home-row-mods)\n- [gBoard's combo library](http://combos.gboards.ca/docs/install/)\n"
+{
+  "id": "corne",
+  "name": "Corne",
+  "layouts": {
+    "default_transform": {
+      "name": "default_transform",
+      "layout": [
+        { "row": 0, "col":  0, "x":     0, "y": 0.375 },
+        { "row": 0, "col":  1, "x":     1, "y": 0.375 },
+        { "row": 0, "col":  2, "x":     2, "y": 0.125 },
+        { "row": 0, "col":  3, "x":     3, "y":     0 },
+        { "row": 0, "col":  4, "x":     4, "y": 0.125 },
+        { "row": 0, "col":  5, "x":     5, "y":  0.25 },
+        { "row": 0, "col":  7, "x":     9, "y":  0.25 },
+        { "row": 0, "col":  8, "x":    10, "y": 0.125 },
+        { "row": 0, "col":  9, "x":    11, "y":     0 },
+        { "row": 0, "col": 10, "x":    12, "y": 0.125 },
+        { "row": 0, "col": 11, "x":    13, "y": 0.375 },
+        { "row": 0, "col": 12, "x":    14, "y": 0.375 },
+      
+        { "row": 1, "col":  0, "x":     0, "y": 1.375 },
+        { "row": 1, "col":  1, "x":     1, "y": 1.375 },
+        { "row": 1, "col":  2, "x":     2, "y": 1.125 },
+        { "row": 1, "col":  3, "x":     3, "y":     1 },
+        { "row": 1, "col":  4, "x":     4, "y": 1.125 },
+        { "row": 1, "col":  5, "x":     5, "y":  1.25 },
+        { "row": 1, "col":  7, "x":     9, "y":  1.25 },
+        { "row": 1, "col":  8, "x":    10, "y": 1.125 },
+        { "row": 1, "col":  9, "x":    11, "y":     1 },
+        { "row": 1, "col": 10, "x":    12, "y": 1.125 },
+        { "row": 1, "col": 11, "x":    13, "y": 1.375 },
+        { "row": 1, "col": 12, "x":    14, "y": 1.375 },
+      
+        { "row": 2, "col":  0, "x":     0, "y": 2.375 },
+        { "row": 2, "col":  1, "x":     1, "y": 2.375 },
+        { "row": 2, "col":  2, "x":     2, "y": 2.125 },
+        { "row": 2, "col":  3, "x":     3, "y":     2 },
+        { "row": 2, "col":  4, "x":     4, "y": 2.125 },
+        { "row": 2, "col":  5, "x":     5, "y":  2.25 },
+        { "row": 2, "col":  7, "x":     9, "y":  2.25 },
+        { "row": 2, "col":  8, "x":    10, "y": 2.125 },
+        { "row": 2, "col":  9, "x":    11, "y":     2 },
+        { "row": 2, "col": 10, "x":    12, "y": 2.125 },
+        { "row": 2, "col": 11, "x":    13, "y": 2.375 },
+        { "row": 2, "col": 12, "x":    14, "y": 2.375 },
+      
+        { "row": 3, "col":  3, "x":  3.48, "y": 3.125, "r":   0 },
+        { "row": 3, "col":  4, "x":  3.48, "y": 3.125, "r":  15, "rx":  3.98, "ry": 7.895 },
+        { "row": 3, "col":  5, "x":  3.48, "y": 2.625, "r":  30, "rx":  3.98, "ry": 7.895, "h": 1.5 },
+        { "row": 3, "col":  7, "x": 10.52, "y": 2.625, "r": -30, "rx": 11.02, "ry": 7.895, "h": 1.5 },
+        { "row": 3, "col":  8, "x": 10.52, "y": 3.125, "r": -15, "rx": 11.02, "ry": 7.895 },
+        { "row": 3, "col":  9, "x": 10.52, "y": 3.125 }
+      ]
+    },
+    "five_column_transform": {
+      "name": "five_column_transform",
+      "layout": [
+        { "row": 0, "col":  1, "x":    0, "y": 0.375 },
+        { "row": 0, "col":  2, "x":    1, "y": 0.125 },
+        { "row": 0, "col":  3, "x":    2, "y":     0 },
+        { "row": 0, "col":  4, "x":    3, "y": 0.125 },
+        { "row": 0, "col":  5, "x":    4, "y":  0.25 },
+        { "row": 0, "col":  7, "x":    8, "y":  0.25 },
+        { "row": 0, "col":  8, "x":    9, "y": 0.125 },
+        { "row": 0, "col":  9, "x":   10, "y":     0 },
+        { "row": 0, "col": 10, "x":   11, "y": 0.125 },
+        { "row": 0, "col": 11, "x":   12, "y": 0.375 },
+      
+        { "row": 1, "col":  1, "x":    0, "y": 1.375 },
+        { "row": 1, "col":  2, "x":    1, "y": 1.125 },
+        { "row": 1, "col":  3, "x":    2, "y":     1 },
+        { "row": 1, "col":  4, "x":    3, "y": 1.125 },
+        { "row": 1, "col":  5, "x":    4, "y":  1.25 },
+        { "row": 1, "col":  7, "x":    8, "y":  1.25 },
+        { "row": 1, "col":  8, "x":    9, "y": 1.125 },
+        { "row": 1, "col":  9, "x":   10, "y":     1 },
+        { "row": 1, "col": 10, "x":   11, "y": 1.125 },
+        { "row": 1, "col": 11, "x":   12, "y": 1.375 },
+      
+        { "row": 2, "col":  1, "x":    0, "y": 2.375 },
+        { "row": 2, "col":  2, "x":    1, "y": 2.125 },
+        { "row": 2, "col":  3, "x":    2, "y":     2 },
+        { "row": 2, "col":  4, "x":    3, "y": 2.125 },
+        { "row": 2, "col":  5, "x":    4, "y":  2.25 },
+        { "row": 2, "col":  7, "x":    8, "y":  2.25 },
+        { "row": 2, "col":  8, "x":    9, "y": 2.125 },
+        { "row": 2, "col":  9, "x":   10, "y":     2 },
+        { "row": 2, "col": 10, "x":   11, "y": 2.125 },
+        { "row": 2, "col": 11, "x":   12, "y": 2.375 },
+      
+        { "row": 3, "col":  3, "x": 2.48, "y": 3.125, "r":   0 },
+        { "row": 3, "col":  4, "x": 2.48, "y": 3.125, "r":  15, "rx":  2.98, "ry": 7.895 },
+        { "row": 3, "col":  5, "x": 2.48, "y": 2.625, "r":  30, "rx":  2.98, "ry": 7.895, "h": 1.5 },
+        { "row": 3, "col":  7, "x": 9.52, "y": 2.625, "r": -30, "rx": 10.02, "ry": 7.895, "h": 1.5 },
+        { "row": 3, "col":  8, "x": 9.52, "y": 3.125, "r": -15, "rx": 10.02, "ry": 7.895 },
+        { "row": 3, "col":  9, "x": 9.52, "y": 3.125 }
+      ]
+    }
   },
-  [
-    {
-      "f": 6,
-      "w": 12,
-      "h": 0.5,
-      "d": true
-    },
-    "Base Layer"
-  ],
-  [
-    {
-      "y": -0.25,
-      "p": "CHICKLET",
-      "a": 7,
-      "f": 5
-    },
-    "Q",
-    "W",
-    "F",
-    "P",
-    "B",
-    {
-      "x": 2
-    },
-    "J",
-    "L",
-    "U",
-    "Y",
-    {
-      "f": 6
-    },
-    "'"
-  ],
-  [
-    {
-      "y": -0.75,
-      "x": 1.75,
-      "f": 4,
-      "w": 0.5,
-      "h": 0.5
-    },
-    "@",
-    {
-      "x": 0.5,
-      "w": 0.5,
-      "h": 0.5
-    },
-    "{",
-    {
-      "x": 5.5,
-      "w": 0.5,
-      "h": 0.5
-    },
-    "}",
-    {
-      "x": 0.5,
-      "f": 5,
-      "w": 0.5,
-      "h": 0.5
-    },
-    "\""
-  ],
-  [
-    {
-      "y": -0.25
-    },
-    "A\n\n\n\nshift",
-    "R\n\n\n\nctrl",
-    "S\n\n\n\nopt",
-    {
-      "n": true
-    },
-    "T\n\n\n\ncmd",
-    "G",
-    {
-      "x": 2
-    },
-    "M",
-    {
-      "n": true
-    },
-    "N\n\n\n\ncmd",
-    "E\n\n\n\nopt",
-    "I\n\n\n\nctrl",
-    "O\n\n\n\nshift"
-  ],
-  [
-    {
-      "y": -0.7000000000000002,
-      "x": 0.75,
-      "f": 4,
-      "w": 0.5,
-      "h": 0.5
-    },
-    "`",
-    {
-      "x": 0.5,
-      "w": 0.5,
-      "h": 0.5
-    },
-    ":",
-    {
-      "x": 0.5,
-      "w": 0.5,
-      "h": 0.5
-    },
-    "(",
-    {
-      "x": 5.5,
-      "w": 0.5,
-      "h": 0.5
-    },
-    ")",
-    {
-      "x": 0.5,
-      "w": 0.5,
-      "h": 0.5
-    },
-    "-",
-    {
-      "x": 0.5,
-      "w": 0.5,
-      "h": 0.5
-    },
-    "+"
-  ],
-  [
-    {
-      "y": -0.2999999999999998,
-      "f": 5
-    },
-    "Z",
-    "X",
-    "C",
-    "D",
-    "V",
-    {
-      "x": 2
-    },
-    "K",
-    "H",
-    {
-      "f": 6
-    },
-    ",",
-    ".",
-    {
-      "f": 5
-    },
-    "/"
-  ],
-  [
-    {
-      "y": -0.75,
-      "x": 0.75,
-      "w": 0.5,
-      "h": 0.5
-    },
-    "~",
-    {
-      "x": 0.5,
-      "f": 4,
-      "w": 0.5,
-      "h": 0.5
-    },
-    ";",
-    {
-      "x": 0.5,
-      "w": 0.5,
-      "h": 0.5
-    },
-    "[",
-    {
-      "x": 5.5,
-      "w": 0.5,
-      "h": 0.5
-    },
-    "]",
-    {
-      "x": 0.5,
-      "w": 0.5,
-      "h": 0.5
-    },
-    "_",
-    {
-      "x": 0.5,
-      "w": 0.5,
-      "h": 0.5
-    },
-    "?"
-  ],
-  [
-    {
-      "x": 2.5,
-      "f": 6
-    },
-    "<i class='mss mss-Unicode-Escape-3'></i>",
-    {
-      "c": "#73a0ec"
-    },
-    "&#9251;\n\n\n\nnav",
-    {
-      "c": "#cccccc"
-    },
-    "<i class='kb kb-Tab-1'></i>",
-    {
-      "x": 1
-    },
-    "<i class='kb kb-Return-2'></i>",
-    {
-      "c": "#ff6188"
-    },
-    "<i class='mss mss-Unicode-BackSpace-DeleteLeft-Big-2'></i>\n\n\n\nnum",
-    {
-      "c": "#cccccc"
-    },
-    "<i class='mss mss-Unicode-DeleteRight-Big-2'></i>"
-  ],
-  [
-    {
-      "y": 0.75,
-      "a": 4,
-      "w": 12,
-      "h": 0.5,
-      "d": true
-    },
-    "Navigation Layer"
-  ],
-  [
-    {
-      "y": -0.25,
-      "a": 7,
-      "f": 5
-    },
-    "<i class='mss mss-Unicode-Command-3'></i>1",
-    "<i class='mss mss-Unicode-Command-3'></i>2",
-    "<i class='mss mss-Unicode-Command-3'></i>3",
-    "<i class='mss mss-Unicode-Command-3'></i>4",
-    "<i class='mss mss-Unicode-Command-3'></i>5",
-    {
-      "x": 2
-    },
-    "⇪",
-    "<i class='kb kb-Arrows-Top-2'></i>",
-    "<i class='mss mss-Unicode-Page-Down-5'></i>",
-    "<i class='mss mss-Unicode-Page-Up-5'></i>",
-    "<i class='kb kb-Arrows-Bottom-2'></i>"
-  ],
-  [
-    "⇧",
-    "&#8963;",
-    "<i class='mss mss-Unicode-Option-3'></i>",
-    {
-      "n": true
-    },
-    "<i class='mss mss-Unicode-Command-3'></i>",
-    "<i class='fa fa-clipboard'></i>",
-    {
-      "x": 2
-    },
-    "<i class='fa fa-camera'></i>",
-    {
-      "f": 6,
-      "n": true
-    },
-    "<i class='kb kb-Arrows-Left'></i>",
-    "<i class='kb kb-Arrows-Down'></i>",
-    "<i class='kb kb-Arrows-Up'></i>",
-    "<i class='kb kb-Arrows-Right'></i>"
-  ],
-  [
-    {
-      "f": 5
-    },
-    "<i class='kb kb-Undo-3'></i>",
-    "<i class='kb kb-Scissors-2'></i>",
-    "<i class='kb kb-Unicode-Page-Up-1'></i>",
-    "<i class='kb kb-Unicode-Page-Down-1'></i>",
-    "<i class='mss mss-Redo-2'></i>",
-    {
-      "x": 2
-    },
-    "<i class='kb kb-Multimedia-Play-Pause'></i>",
-    "<i class='kb kb-Multimedia-Rewind-Start'></i>",
-    "<i class='kb kb-Multimedia-Volume-Down-2'></i>",
-    "<i class='kb kb-Multimedia-Volume-Up-2'></i>",
-    "<i class='kb kb-Multimedia-FastForward-End'></i>"
-  ],
-  [
-    {
-      "y": 0.25,
-      "x": 2.5,
-      "f": 6
-    },
-    "",
-    {
-      "c": "#73a0ec"
-    },
-    "",
-    {
-      "c": "#cccccc"
-    },
-    "",
-    {
-      "x": 1
-    },
-    "<i class='kb kb-Return-2'></i>",
-    "<i class='mss mss-Unicode-BackSpace-DeleteLeft-Big-2'></i>",
-    "<i class='mss mss-Unicode-DeleteRight-Big-2'></i>"
-  ],
-  [
-    {
-      "y": 0.75,
-      "a": 4,
-      "w": 12,
-      "h": 0.5,
-      "d": true
-    },
-    "Numpad Layer"
-  ],
-  [
-    {
-      "y": -0.34999999999999964,
-      "a": 7,
-      "f": 5
-    },
-    "<i class='fa fa-feed'></i>1",
-    "F7",
-    "F8",
-    "F9",
-    "F10",
-    {
-      "x": 2
-    },
-    "=",
-    "7",
-    "8",
-    "9",
-    "+"
-  ],
-  [
-    "<i class='fa fa-feed'></i>2",
-    "F4",
-    "F5",
-    {
-      "n": true
-    },
-    "F6",
-    "F11",
-    {
-      "x": 2
-    },
-    "*",
-    {
-      "n": true
-    },
-    "4",
-    "5",
-    "6",
-    "-"
-  ],
-  [
-    "<i class='fa fa-feed'></i>3",
-    "F1",
-    "F2",
-    "F3",
-    "F12",
-    {
-      "x": 2
-    },
-    "0",
-    "1",
-    "2",
-    "3",
-    "/"
-  ],
-  [
-    {
-      "y": 0.25,
-      "x": 2.5,
-      "f": 6
-    },
-    "<i class='mss mss-Unicode-Escape-3'></i>",
-    "&#9251;",
-    "<i class='kb kb-Tab-1'></i>",
-    {
-      "x": 1
-    },
-    "<i class='fa fa-rss'></i>CLR",
-    {
-      "c": "#ff6188"
-    },
-    "",
-    {
-      "c": "#cccccc"
-    },
-    ""
-  ],
-  [
-    {
-      "r": 0.01,
-      "y": -14.9,
-      "x": 1.25,
-      "f": 4,
-      "w": 0.5,
-      "h": 0.5
-    },
-    "!",
-    {
-      "x": 0.5,
-      "w": 0.5,
-      "h": 0.5
-    },
-    "#",
-    {
-      "x": 0.5,
-      "w": 0.5,
-      "h": 0.5
-    },
-    "$",
-    {
-      "x": 4.5,
-      "w": 0.5,
-      "h": 0.5
-    },
-    "=",
-    {
-      "x": 0.5,
-      "w": 0.5,
-      "h": 0.5
-    },
-    "|",
-    {
-      "x": 0.5,
-      "w": 0.5,
-      "h": 0.5
-    },
-    "\\"
-  ],
-  [
-    {
-      "x": 1.25,
-      "w": 0.5,
-      "h": 0.5
-    },
-    "%",
-    {
-      "x": 0.5,
-      "w": 0.5,
-      "h": 0.5
-    },
-    "^",
-    {
-      "x": 0.5,
-      "w": 0.5,
-      "h": 0.5
-    },
-    "&",
-    {
-      "x": 4.5,
-      "f": 5,
-      "w": 0.5,
-      "h": 0.5
-    },
-    "*",
-    {
-      "x": 0.5,
-      "f": 4,
-      "w": 0.5,
-      "h": 0.5
-    },
-    "<",
-    {
-      "x": 0.5,
-      "w": 0.5,
-      "h": 0.5
-    },
-    ">"
-  ]
-]
+  "sensors": []
+}
