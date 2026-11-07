@@ -15,7 +15,8 @@
 #define RIG 2
 #define LEF 3
 #define TRI 4
-#define MOUSE 5
+#define MOUSE 4
+#define WM 5
 
 // https://zmk.dev/docs/development/hardware-integration/soft-off-setup?advanced-methods=wakeup&kscan-type=dkscan
 
@@ -91,7 +92,7 @@
   &kp Q        &kp W       &kp E        &kp R       &kp T         &kp Y      &kp U        &kp I        &kp O       &kp P
   &ht GLOBE A  &ht LALT S  &ht LCTRL D  &ht LGUI F  &kp G         &kp H      &ht RGUI J   &ht RCTRL K  &ht RALT L  &ht GLOBE SEMICOLON
   &kp Z        &kp X       &kp C        &kp V       &kp B         &kp N      &kp M        &kp COMMA    &kp DOT     &kp FSLH
-                           &kp DEL      &lt 2 TAB   &kp LSHIFT    &kp SPACE  &lt 1 ENTER  &kp BSPC
+                           &lt 5 ESC    &lt 2 TAB   &kp LSHIFT    &kp SPACE  &lt 1 ENTER  &kp BSPC
             >;
         };
 
@@ -132,6 +133,17 @@
   &trans  &trans    &trans     &trans     &trans        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
   &trans  &trans    &trans     &trans     &trans        &trans          &mkp MB4        &mkp MCLK     &mkp MB5         &trans
                     &trans     &kp SPACE  &kp LSHIFT    &mkp LCLK       &mkp RCLK       &trans
+            >;
+        };
+
+        windows_layer {
+            display-name = "WINDOWS";
+            // hold the outer left thumb (Esc). Sends Omarchy/Hyprland Super shortcuts.
+            bindings = <
+  &kp LG(N1)      &kp LG(N2)      &kp LG(N3)      &kp LG(N4)      &kp LG(N5)          &kp LG(LC(LS(LEFT)))  &kp LG(LS(TAB))   &kp LG(TAB)     &kp LG(J)        &kp LG(LC(LS(RIGHT)))
+  &kp LG(SPACE)   &kp LG(RET)     &kp LG(W)       &kp LG(F)       &kp LG(T)           &kp LG(LEFT)          &kp LG(DOWN)      &kp LG(UP)      &kp LG(RIGHT)    &kp LG(K)
+  &kp LG(LS(N1))  &kp LG(LS(N2))  &kp LG(LS(N3))  &kp LG(LS(N4))  &kp LG(LS(N5))      &kp LG(LS(LEFT))      &kp LG(LS(DOWN))  &kp LG(LS(UP))  &kp LG(LS(RIGHT))  &trans
+                                  &trans          &trans          &trans              &trans                &trans            &trans
             >;
         };
     };
