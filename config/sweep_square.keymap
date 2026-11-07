@@ -151,7 +151,7 @@
 
         game_layer {
             display-name = "GAME";
-            // toggle: FUNC layer (hold Tab+Enter) -> key under I-left... see cheatsheet; exit: right outer thumb
+            // on: FUNC layer (hold Tab+Enter) + I. off: right outer thumb
             // plain keys, no home-row mods, so holding A/S/D never turns into Alt/Ctrl
             bindings = <
   &kp Q      &kp W  &kp E      &kp R      &kp T          &kp Y      &kp U  &kp I      &kp O    &kp P
